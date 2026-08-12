@@ -7,7 +7,6 @@ import {
   Building2,
   Users,
   GraduationCap,
-  BookOpen,
   Bell,
   Settings,
   X,
@@ -43,11 +42,6 @@ const menuItems = [
     label: "Students",
     href: "/dashboard/hoi/students",
     icon: Users,
-  },
-  {
-    label: "Courses",
-    href: "/dashboard/hoi/courses",
-    icon: BookOpen,
   },
   {
     label: "Notices",

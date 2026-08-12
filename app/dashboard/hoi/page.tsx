@@ -150,7 +150,7 @@ export default function HOIDashboard() {
                 Quick Actions
               </h2>
 
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 
                 <button className="rounded-2xl border border-white/10 bg-white/5 p-5 text-left transition hover:bg-white/10">
                   <h3 className="font-semibold">
@@ -159,16 +159,6 @@ export default function HOIDashboard() {
 
                   <p className="mt-2 text-sm text-slate-400">
                     Add and manage institution departments.
-                  </p>
-                </button>
-
-                <button className="rounded-2xl border border-white/10 bg-white/5 p-5 text-left transition hover:bg-white/10">
-                  <h3 className="font-semibold">
-                    Manage Courses
-                  </h3>
-
-                  <p className="mt-2 text-sm text-slate-400">
-                    Create and manage academic courses.
                   </p>
                 </button>
 
