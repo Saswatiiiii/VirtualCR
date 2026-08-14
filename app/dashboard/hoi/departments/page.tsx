@@ -146,10 +146,23 @@ export default function DepartmentsPage() {
       batches: 0,
     };
 
-    setDepartmentData((currentDepartments) => [
-      ...currentDepartments,
-      newDepartment,
-    ]);
+    setDepartmentData((currentDepartments) => {
+      const updatedDepartments = [
+        ...currentDepartments,
+        newDepartment,
+      ];
+
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify(updatedDepartments)
+      );
+
+      window.dispatchEvent(
+        new Event("departmentsUpdated")
+      );
+
+      return updatedDepartments;
+    });
 
     // Reset
     setNewDepartmentId("");
